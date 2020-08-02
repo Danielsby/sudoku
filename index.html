@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sudoku</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+
+    <ul>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Welcome to the sudoku game!',
+        todos: [
+          { text: 'Step 1: Choose difficulty level'},
+          { text: 'Step 2: Choose theme'},
+          { text: 'Step 3: Press play'},
+        ]
+      }
+    })
+  </script>
+</body>
+</html>
